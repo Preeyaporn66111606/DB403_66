@@ -1,35 +1,4 @@
-<?php
-if (isset($_POST['submit'])) {
-  
-  require 'connect.php';
-  $studentID = $_POST['student_ID'];
-  $password = $_POST['password'];
-  $sql ="SELECT * FROM student WHERE
-         studentID={$studentID}";
-  try{
-  $result = $conn->query($sql);
-  $row =$result->fetch_assoc();
-  if($row){
-    if(password_verify($password,$row['password'])){
-      echo('Ta da!!!!!');
-    }
-    else {
-      echo('PASSWORD ผิดแล้ว!!!');
-
-
-    }
-  }
-  else{
-    echo 'STUDENT_ID ผิดแล้ว!!!';
-  }
-}
-catch(Exception $e){
-  echo $e;
-  
-}
-}
-?>
-<!doctype html>
+!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">

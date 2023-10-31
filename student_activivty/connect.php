@@ -5,4 +5,4 @@
         echo $conn->connect_error;
         die();
     }
-?>่
+    

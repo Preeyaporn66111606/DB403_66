@@ -17,6 +17,7 @@ if (isset($_POST['submit'])) {
           'studentID'=>$row['studentID'],
           'studentName'=>$row['studentName']
         ];
+        // var_dump($_SESSION);
         header('location:index.php');
         exit;
       }

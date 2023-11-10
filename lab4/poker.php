@@ -16,7 +16,8 @@
 <body>
 <?php
 $suits = ['spades', 'hearts', 'clubs', 'diams']; // ดอกไพ่
-$ranks = explode(',', 'A,2,3,4,5,6,7,8,9,10,J,Q,K'); // เลขไพ่
+$ranks = expl
+ode(',', 'A,2,3,4,5,6,7,8,9,10,J,Q,K'); // เลขไพ่
 $decks = []; // สำรับไพ่
 foreach ($suits as $suit){
     foreach ($ranks as $rank){
